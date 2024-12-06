@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Artículos de Aseo para Mascotas</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Se ajustaron los tamaños */
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 180px;  /* Reducir altura de la imagen para que el cuadro sea más pequeño */
+            object-fit: cover;
+        }
+
+        .product-card h3 {
+            color: #2c3e50;
+            padding: 10px;
+            font-size: 1.2rem;
+        }
+
+        .product-card p {
+            color: #7f8c8d;
+            padding: 0 10px;
+            font-size: 1rem;
+        }
+
+        .product-card .price {
+            color: #e74c3c;
+            font-size: 1.5rem;
+            margin: 15px 0;
+        }
+
+        .product-card button {
+            background-color: #16a085;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .product-card button:hover {
+            background-color: #1abc9c;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Tienda de Artículos de Aseo para Mascotas
+</header>
+
+<div class="main-content">
+    <!-- Producto 1 - Shampoo para perro -->
+    <div class="product-card">
+        <img src="IMG/ShampooP.jpg" alt="Shampoo para perro" style="width: 300px; height: 180px;">
+        <h3>Shampoo para Perro</h3>
+        <p>Shampoo especial para perros con piel sensible.</p>
+        <div class="price">$39.99</div>
+        <a href="https://monse2012.github.io/formularioalimentosyaseo/"><button>Comprar</button></a>
+    </div>
+
+    <!-- Producto 2 - Toalla para perro -->
+    <div class="product-card">
+        <img src="IMG/toallas.jpg" alt="Toalla para tu peludo" style="width: 300px; height: 180px;">
+        <h3>Toalla para tu peludo</h3>
+        <p>1pza de toalla absorbente para secar a tu peludo rápidamente. El color es al azar.</p>
+        <div class="price">$30.49</div>
+        <a href="https://monse2012.github.io/formularioalimentosyaseo/"><button>Comprar</button></a>
+    </div>
+
+    <!-- Producto 3 - Jabón para perro -->
+    <div class="product-card">
+        <img src="IMG/jabon.jpg" alt="Jabón para perro" style="width: 300px; height: 180px;">
+        <h3>Jabón para Perro</h3>
+        <p>Jabón para perros con piel delicada.</p>
+        <div class="price">$35.99</div>
+        <a href="https://monse2012.github.io/formularioalimentosyaseo/"><button>Comprar</button></a>
+    </div>
+
+    <!-- Producto 4 - Shampoo para gato -->
+    <div class="product-card">
+        <img src="IMG/shampoogato.jpg" alt="Shampoo para gato" style="width: 300px; height: 180px;">
+        <h3>Shampoo para Gato</h3>
+        <p>Shampoo para el cuidado del pelaje de tu gato.</p>
+        <div class="price">$17.99</div>
+        <a href="https://monse2012.github.io/formularioalimentosyaseo/"><button>Comprar</button></a>
+    </div>
+
+    <!-- Producto 5 - Cortauñas -->
+    <div class="product-card">
+        <img src="IMG/cortauñas.jpg" alt="Toalla para gato" style="width: 300px; height: 180px;">
+        <h3>Cortauñas</h3>
+        <p>Perfecto para mantener sus patitas tan elegantes como su personalidad.</p>
+        <div class="price">$20.50</div>
+        <a href="https://monse2012.github.io/formularioalimentosyaseo/"><button>Comprar</button></a>
+    </div>
+
+    <!-- Producto 6 - JSpray para mishu -->
+    <div class="product-card">
+        <img src="IMG/spray.jpg" alt="Jabón para gato" style="width: 300px; height: 180px;">
+        <h3>Spray para mishu</h3>
+        <p>Spray para mishu.</p>
+        <div class="price">$35.50</div>
+        <a href="https://monse2012.github.io/formularioalimentosyaseo/"><button>Comprar</button></a>
+    </div>
+
+    <!-- Producto 7 - Peines -->
+    <div class="product-card">
+        <img src="IMG/cepillos.jpg" alt="Cepillo para perro" style="width: 300px; height: 180px;">
+        <h3>Peine para tu mascota</h3>
+        <p>Peina y dale un mejor look a tu mascota.</p>
+        <div class="price">$30.50</div>
+        <a href="https://monse2012.github.io/formularioalimentosyaseo/"><button>Comprar</button></a>
+    </div>
+
+    <!-- Producto 8 - Cepillo dental -->
+    <div class="product-card">
+        <img src="IMG/cepillog.jpg" alt="Cepillo para gato" style="width: 300px; height: 180px;">
+        <h3>Cepillo dental</h3>
+        <p>Mejora la sonrisa de tu gato.</p>
+        <div class="price">$25.99</div>
+        <a href="https://monse2012.github.io/formularioalimentosyaseo/"><button>Comprar</button></a>
+    </div>
+
+    <!-- Producto 9 - Cepillo dental -->
+    <div class="product-card">
+        <img src="IMG/cepillo perro.jpg" alt="Peine para perro" style="width: 300px; height: 180px;">
+        <h3>Cepillo dental</h3>
+        <p>Dale la mejor sonrisa a tu perrijo.</p>
+        <div class="price">$20.99</div>
+        <a href="https://monse2012.github.io/formularioalimentosyaseo/"><button>Comprar</button></a>
+    </div>
+
+    <!-- Producto 10 - Limpiador de oídos -->
+    <div class="product-card">
+        <img src="IMG/limpiador.jpg" alt="Limpiador de oídos para perro" style="width: 300px; height: 180px;">
+        <h3>Limpiador de Oídos</h3>
+        <p>Buscas limpiar los oídos de tu mascota, esta es tu mejor opción.</p>
+        <div class="price">$20.40</div>
+        <a href="https://monse2012.github.io/formularioalimentosyaseo/"><button>Comprar</button></a>
+    </div>
+</div>
+
+</body>
+</html>
